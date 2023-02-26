@@ -8,7 +8,7 @@ function PostsList() {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch, posts]);
+  },[]);
 
   return (
     <div>
@@ -23,7 +23,7 @@ function PostsList() {
           posts.tableRowsPosts.map((post) => {
             let { id, name, description } = post;
             return (
-              <tr key = {id}>
+              <tr key = {`${id}-${name}`}>
                 <td>{name}</td>
                 <td>{description}</td>
                 <td>

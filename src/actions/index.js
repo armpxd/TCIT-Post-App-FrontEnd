@@ -38,12 +38,10 @@ export const deletePost = (data) => {
 };
 
 export const filterPosts = (data) => {
-  console.log(data);
   return { type: FILTER_POSTS, payload: data };
 };
 
 export const createPost = (data) => {
-  console.log(data);
   return (dispatch) => {
     return postsServices.createPost(data).then((response) => {
       if (!response.error) {
