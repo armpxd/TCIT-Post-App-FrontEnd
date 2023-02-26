@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input {
+  margin-top: 12px;
+  margin-bottom: 10px;
+
+}
+
+.inputName{
+  float:left;
+}
+
+
+.inputSubmit{
+  float:right;
+}
+
+.inputSeacrh{
+  width: 40%;
+  float:left;
+}
+
+
